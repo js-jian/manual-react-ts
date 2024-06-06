@@ -3,6 +3,6 @@
     /* Visit https://aka.ms/tsconfig to read more about this file */
     "target": "es5",
     "jsx": "react-jsx", // https://www.typescriptlang.org/tsconfig/#jsx
-    "esModuleInterop": true, // https://www.typescriptlang.org/tsconfig/#esModuleInterop
+    "esModuleInterop": true // https://www.typescriptlang.org/tsconfig/#esModuleInterop
   }
 }
