@@ -1,7 +1,7 @@
 
 # .editorconfig 文件
 # - 作用：统一编辑器默认的代码格式
-# - 使用：安装 VS Code中EditorConfig for VS Code插件
+# - 使用：VS Code中安装EditorConfig for VS Code插件
 
 root = true # 表示是最顶层的配置文件，为true则会停止查找.editorconfig文件
 
@@ -12,3 +12,6 @@ indent_size = 2 # 表示缩进宽度，indent_style为space，则插入2个空�
 end_of_line = lf # 表示换行符
 insert_final_newline = true # true表示文件以空白行结尾
 trim_trailing_whitespace = true # true表示去除换行行首的任意空白字符
+
+[*.md]
+trim_trailing_whitespace = false

@@ -3,6 +3,16 @@
     /* Visit https://aka.ms/tsconfig to read more about this file */
     "target": "es5",
     "jsx": "react-jsx", // https://www.typescriptlang.org/tsconfig/#jsx
-    "esModuleInterop": true // https://www.typescriptlang.org/tsconfig/#esModuleInterop
-  }
+    "esModuleInterop": true, // https://www.typescriptlang.org/tsconfig/#esModuleInterop
+    "isolatedModules": true, // 开启后将每个文件作为单独的模块，强制要求开发者保持模块的隔离性
+    "strict": true, // 启用所有严格类型检查选项
+    "strictNullChecks": false, // 在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*" // 加上baseUrl和paths配置后，使用@才有提示，不配则无提示且报错【找不到xxx模块】
+      ]
+    }
+  },
+  "exclude": ["node_modules"],
 }
